@@ -14,7 +14,7 @@ Bms_result dataread(float Temperature[],float StateOfCharge[])
     int senderInputValue = 0;
     FILE * fd = fopen("./BMS_Sender/SenderInputFile.txt","r");  
     if (fd) {
-        for(int i=0;fscanf(file, "%f\t\t%f\n", &TemperatureTemp,&StateOfChargeVal)!=EOF ;i++)
+        for(int i=0;fscanf(fd, "%f\t\t%f\n", &TemperatureTemp,&StateOfChargeVal)!=EOF ;i++)
         {
             senderInputValue=senderInputValue+1;
             Temperature[i]=TemperatureTemp;
