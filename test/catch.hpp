@@ -8037,6 +8037,8 @@ namespace Catch {
 
 #elif defined ( CATCH_CONFIG_POSIX_SIGNALS )
 
+#undef MINSIGSTKSZ
+#define MINSIGSTKSZ 16384
 #include <signal.h>
 
 namespace Catch {
