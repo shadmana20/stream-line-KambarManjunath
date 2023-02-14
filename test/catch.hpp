@@ -1,4 +1,3 @@
-
 /*
  *  Catch v2.13.0
  *  Generated: 2020-07-12 20:07:49.015950
@@ -12,7 +11,6 @@
 #ifndef TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED
 #define TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED
 // start catch.hpp
-
 
 #define CATCH_VERSION_MAJOR 2
 #define CATCH_VERSION_MINOR 13
@@ -8037,9 +8035,10 @@ namespace Catch {
 
 #elif defined ( CATCH_CONFIG_POSIX_SIGNALS )
 
+#include <signal.h>
+
 #undef MINSIGSTKSZ
 #define MINSIGSTKSZ 16384
-#include <signal.h>
 
 namespace Catch {
 
@@ -17799,4 +17798,3 @@ using Catch::Detail::Approx;
 // end catch_reenable_warnings.h
 // end catch.hpp
 #endif // TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED
-
