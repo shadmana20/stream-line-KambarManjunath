@@ -54,7 +54,7 @@ Bms_result outputtoconsole(float Temperature[],float StateOfCharge[])
     {
         printf("Temperature value is %f and StateOfCharge value is %f\n",Temperature[i],StateOfCharge[i]);
     }
-    return SUCESS;
+    return SUCCESS;
 
 
 }
